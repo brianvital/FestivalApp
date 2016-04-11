@@ -1,0 +1,79 @@
+﻿<div class="row">
+    <div class="col-md-12">
+        <div class="boxtext">
+            <h3><strong> Today's attraction is {{controller.event.attraction.name}} !</strong></h3>
+            <form class="comment row">
+                <div class="stars1 {{starsDisabled?'inactive':''}}">
+                    <h4>
+                        Average Fan Rating:
+                        <span class="rate1">
+                            <inpup disabled type="radio" ng-model="controller.event.rating" value="5" />
+                            <label for="rating5"></label>
+                            <input disabled type="radio" ng-model="controller.event.rating" value="4" />
+                            <label for="rating4"></label>
+                            <input disabled type="radio" ng-model="controller.event.rating" value="3" />
+                            <label for="rating3"></label>
+                            <input disabled type="radio" ng-model="controller.event.rating" value="2" />
+                            <label for="rating2"></label>
+                            <input disabled type="radio" ng-model="controller.event.rating" value="1" />
+                            <label for="rating1"></label>
+                        </span>
+                    </h4>
+                </div>
+            </form>
+            
+
+
+        </div>
+
+    </div>
+    <div class="textbox">
+                <h4>
+                    Starting at : {{event.startTime | date:"short"}}<br />
+                    Until :  {{controller.event.endTime  | date:"short"}}
+                </h4>
+                <span style="display: block; margin: 0px auto; text-align: left;">
+                    PIN: {{controller.event.pushpins}}
+                </span>
+                <span style="display: block; margin: 0px auto; text-align: left;">
+                Latest Comments: {{controller.event.tags[0]}} {{controller.event.comments}}
+                </span>
+            </div>
+    <br />
+    <div class="row">
+        <div class="col-lg-offset-2 col-md-3">
+            <img ng-src="{{controller.event.attraction.pictureUrl}}" height="500" width="800" />
+            <div class="col-md-offset-12 col-md-12">
+                <audio controls autoplay ng-src="{{controller.event.attraction.soundUrl}}" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <br />
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="boxtext">
+            <form class="comment row" ng-submit="controller.addComment(comment)">
+                <div class="stars {{starsDisabled?'inactive':''}}" ng-init="starsDisabled = false;">
+                    <h4>Your Rating:</h4>
+                    <span class="rate">
+                        <input enabled type="radio" ng-model="comment.rating" value="5" id="rating5" ng-disabled="starsDisabled" />
+                        <label for="rating5"></label>
+                        <input enabled type="radio" ng-model="comment.rating" value="4" id="rating4" ng-disabled="starsDisabled" />
+                        <label for="rating4"></label>
+                        <input enabled type="radio" ng-model="comment.rating" value="3" id="rating3" ng-disabled="starsDisabled" />
+                        <label for="rating3"></label>
+                        <input enabled type="radio" ng-model="comment.rating" value="2" id="rating2" ng-disabled="starsDisabled" />
+                        <label for="rating2"></label>
+                        <input enabled type="radio" ng-model="comment.rating" value="1" id="rating1" ng-disabled="starsDisabled" />
+                        <label for="rating1"></label>
+                    </span>
+                </div>
+                <textarea rows="5" placeholder="Enter Comments" class="form-control" ng-model="comment.message"></textarea>
+                <input class="btn btn-success" type="submit" value="Submit" />
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+﻿
+<div class="map">
+    <div class="pin-list">
+        <h4>Key Map</h4>
+        <ul>
+            <li ng-click="controller.togglePin('food')">
+                <img ng-src="" />
+                Food
+            </li>
+            <li ng-click="controller.togglePin('chair')">Wheel Chair Rental</li>
+            <li ng-click="controller.togglePin('beer')">Beer</li>
+            <li ng-click="controller.togglePin('aid')">FirstAid Kit</li>
+            <li ng-click="controller.togglePin('water')">Water</li> </>
+            <li ng-click="controller.togglePin('stage')">Stage</li>
+            <li ng-click="controller.togglePin('atm')">ATM</li> </>
+            <li ng-click="controller.togglePin('room')">Restroom</li>
+            <li ng-click="controller.togglePin('booth')">Booth</li>
+            <li ng-click="controller.togglePin('ticket')">Tickets</li>
+
+        </ul>
+    </div>
+    <div class="map-display">
+        <div class="pins" ng-repeat="(category, pinGroup) in controller.map.pins | groupBy:'category'">
+            <div ng-show="controller.categories[category]">
+                <span ng-repeat="pin in pinGroup track by $index" class="pin" style="left: {{pin.left}}px; top: {{pin.top}}px;" element-number="{{$index + 1}}" alt="{{pin.name}}"></span>
+            </div>
+        </div>
+        <img src="/Images/Festmap.png" />
+    </div>
+</div>

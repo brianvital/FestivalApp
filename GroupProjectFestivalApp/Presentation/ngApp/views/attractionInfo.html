@@ -1,0 +1,35 @@
+﻿<div class="boxtext">
+    <div class="row">
+        <div>
+            <h3>Attraction:  {{controller.info.name}}</h3>
+        </div>
+        <div><h4> Start Times: {{controller.info.events[0].startTime | date:"short"}}</h4></div>
+        <div><h4> End Times: {{controller.info.events[0].endTime | date:"short"}}</h4></div>
+    </div>
+    <div><img src="{{controller.info.pictureUrl}}" /></div>
+    <div><h3>Attraction Bio:  </h3></div>
+    <div>
+        <h4>
+            Average Fan Rating:
+            <span class="rate1">
+                <input disabled type="radio" ng-model="controller.info.rating" value="5" />
+                <label for="rating5"></label>
+                <input disabled type="radio" ng-model="controller.info.rating" value="4" />
+                <label for="rating4"></label>
+                <input disabled type="radio" ng-model="controller.info.rating" value="3" />
+                <label for="rating3"></label>
+                <input disabled type="radio" ng-model="controller.info.rating" value="2" />
+                <label for="rating2"></label>
+                <input disabled type="radio" ng-model="controller.info.rating" value="1" />
+                <label for="rating1"></label>
+            </span>
+        </h4>
+        <h4>{{controller.info.description}}</h4>
+        <div><h4><a href="#/events/4">Show Times and Ratings</a></h4></div>
+    </div>
+</div>
+
+
+
+
+

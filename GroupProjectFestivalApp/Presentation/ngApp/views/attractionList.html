@@ -1,0 +1,72 @@
+
+
+<h3 class="text-center">Attraction Listing</h3>
+ <div class="row">
+<div>
+    <nav>
+        <div class="col-md-4 text-center">
+            <div class="boxtext1">
+                 <h4 ng-init="order = 'name'" ng-click="order = 'name'">Sort by A-Z Attraction</h4>
+            </div>
+        </div>
+        <div class="col-md-4 text-center">
+            <div col-offset-1 col-md-4 class="boxtext1">
+                <h4 ng-click="order = 'startTime'">Attraction Times</h4>
+            </div>
+        </div>
+        <div class="col-md-4 text-center">
+            <div col-offset-1 col-md-4 class="boxtext1">
+                <h4 ng-click="order = 'rating'">Attraction Ratings</h4>
+            </div>
+        </div>
+    </nav>
+</div>
+<br />
+
+
+    <div class="row" ng-repeat="attraction in controller.attractions | orderBy:order">
+
+    <div class="boxtext2">
+        <div class="row">
+            <div class="col-sm-offset-1 col-md-1">
+                <a href="#/info/{{attraction.id}}">
+                    <img ng-src="{{attraction.pictureUrl}}" height="75" width="75">
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <h4>
+                    {{attraction.name}}
+                </h4>
+            </div>
+            <div class="col-md-3">
+            <a href="#/info/{{attraction.id}}">  
+                           
+                <h4>
+                        
+                        {{attraction.events[0].startTime | date:"short"}}
+                </h4>
+            </div>
+
+            <div class="col-md-offset-1 col-md-2">
+                
+                    <span class="rate1" style="height:50px; width:50px;" >
+                        <input disabled type="radio" ng-model="attraction.rating" value="5" />
+                        <label for="rating5"></label>
+                        <input disabled type="radio" ng-model="attraction.rating" value="4" />
+                        <label for="rating4"></label>
+                        <input disabled type="radio" ng-model="attraction.rating" value="3" />
+                        <label for="rating3"></label>
+                        <input disabled type="radio" ng-model="attraction.rating" value="2" />
+                        <label for="rating2"></label>
+                        <input disabled type="radio" ng-model="attraction.rating" value="1" />
+                        <label for="rating1"></label>
+                    </span>
+            </div>
+               
+
+
+        </div>
+
+
+        </div> 
+</div>

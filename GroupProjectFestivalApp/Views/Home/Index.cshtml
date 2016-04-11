@@ -1,0 +1,68 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" ng-app="GroupProjectFestivalApp">
+<head>
+    <title>Man-E-Fest</title>
+
+    @Styles.Render("~/Content/css")
+
+    @Scripts.Render("~/angular/core")
+    @Scripts.Render("~/angular/app")
+</head>
+<div class="site-top">
+    <div id="wrap">
+        <div id="header">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+            <div class="four"></div>
+            <div class="five"></div>
+            <div class="six"></div>
+        </div>
+    </div>
+</div>
+    <h1>
+        Man-E-Fest  <!-- Vertical Settings Mixer Filled icon by Icons8 -->
+        <img class="icon icons8-Vertical-Settings-Mixer-Filled" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAABkElEQVRoQ+1XwW3DMBBjJmi6SbtRNkg3SLtBu0E2SjdpO0GDK2xACGyTd1YE1Ti/9DjTxyMpSzts5NlthAcYkctA9HkF4SYYjMjvQIDVLfFsgsEabNKEoDbtI4kIUxxL6DQFLIqRighTTEUmhuSy1h7ACcABgK2nnm8AZwBvAGytPLQJAYRilBl5B3AUQK3kA8CLWEubEHAoRknka0GJ22+ZGo9CA1ZCmxBwKEZJZCwWcP9K2I4XDXvI4j0SCVm8JGJ2eRDl+HHYkNri5pshi/cY9pDFSyLmzddh+51TxpSw7dfq7rX9riYiuspd5rVWyOJs5/E2McXSi7E67DWaqIERsniPiri9q/zUvLaooUgI478oQgeaRBxGptMUsChGKiJMMXr6zbAvDZd6U1CmCUZmZEaJ0O2uhqq1FQkd+HokErrd9UgkdClKIsUEamckdLvrUZHNhD10u+tREaGnUAk9HdTOSOjAJ1BLIk2P4KnIHf8jmRFirwz7OKDPYfEkBHKupAkG+4+s6L/tq5shcgUHeKUzjnutSAAAAABJRU5ErkJggg==" width="50" height="50">
+    </h1>
+
+<body class="container">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+
+                <nav class="navbar navbar-default" role="navigation" style="border-color: mediumseagreen; border-width:thick 5px;">
+
+                    <div class="navbar-header">
+
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                        </button> 
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a class="navbar-brand" href="/#/home">Home</a>
+                            </li>
+                            <li>
+                                <a class="navbar-brand" href="/#/attractions">Attractions</a>
+                            </li>
+                            <li >
+                                <a  class="navbar-brand" href="/#/map/3">Map</a>
+                            </li>
+                            <li>
+                                <a class="navbar-brand" href="/#/comments">Comments</a>
+                            </li>
+                            <li>
+                                <a class="navbar-brand" href="/#/login">Log-In</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </div>
+    <ng-view></ng-view>
+
+</body>
+</html>

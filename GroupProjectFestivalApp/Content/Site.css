@@ -1,0 +1,360 @@
+﻿body {
+    font-family: "Rockwell";
+    color: #3bc57f;
+    margin-top: 200px;
+}
+a{
+    color: #3bc57f;
+}
+
+a:hover{
+    color: black;
+}
+.button5 {
+    border-radius: 0s%; 
+    color:#3bc57f;
+    border:dashed black;
+    background-color:white;
+
+}
+
+.log h1 {
+    font-family: "Rockwell";
+    color: black;
+    margin-top: unset;
+    font-size: 300%;
+}
+
+#wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 205px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    animation: move 20s infinite linear;
+}
+
+@keyframes move {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: -2450px;
+    }
+}
+
+#header > div {
+    width: 600px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    border-right: 2px solid black;
+    background-position: center;
+    background-size: 600px auto;
+    display: block;
+    position: absolute;
+    border-bottom: 5px solid black;
+}
+
+    #header > div.one {
+        background: url(http://www.onyxtruth.com/wp-content/uploads/2016/02/Black-Voices-Onyx-Truth.jpg);
+        margin-left: 0;
+    }
+
+    #header > div.two {
+        background: url(http://static.wixstatic.com/media/8a013a_85d9ceb867834606a1b354db75d5099c.png_srz_409_272_75_22_0.50_1.20_0.00_png_srz);
+        margin-left: 602px;
+    }
+
+    #header > div.three {
+        background: url(http://farm9.staticflickr.com/8252/8649235715_6d5d521594_z.jpg);
+        margin-left: 1204px;
+    }
+
+    #header > div.four {
+        background: url(http://www.uh.edu/magazine/2015-fall/_img/photo-blazing-the-trail.jpg);
+        margin-left: 1806px;
+    }
+
+    #header > div.five {
+        background: url(http://s1.favim.com/orig/5/audience-black-and-white-festival-live-music-Favim.com-158998.jpg);
+        margin-left: 2408px;
+    }
+
+    #header > div.six {
+        background: url(http://assets.rollingstone.com/assets/2014/article/the-killers-tim-mcgraw-and-ll-cool-j-pump-up-ncaa-march-madness-fest-20140406/14948/_original/1035x690-killers-1800-1396794435.jpg);
+        margin-left: 3010px;
+    }
+
+h1 {
+    font-size: 800%;
+    color: black;
+    font-family: Rockwell;
+}
+
+h2 {
+    font-size: 800%;
+    color: black;
+    font-family: Rockwell;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 40pt;
+    color: black;
+    font-family: Rockwell;
+    border-bottom: #cccccc dotted 2px;
+    border: initial;
+}
+
+h4 {
+    color: #3bc57f;
+    font-family: Rockwell;
+    font-size: 180%;
+    align-content: center;
+}
+h6{
+    font-size:14px;
+    color:white;
+    font-family:Rockwell;
+    margin-left:100px;
+    margin-top:20px;
+
+}
+h6:hover{
+    background-color:#3bc57f;
+    color:black;
+}
+.img1 span {
+    font-size: 800%;
+    color: black;
+    margin-top: 50px;
+    font-family: Rockwell;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    vertical-align: top;
+    text-align: left;
+    color: black;
+    font-family: "sans-serif";
+}
+
+.boxtext {
+    background-color: teal;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    display: inline;
+    align-content: center;
+}
+
+.boxtext1 h4 {
+    color: #ffffff;
+    background-color: #000000;
+    font-family: Rockwell;
+    border: medium;
+    align-items: center;
+}
+
+    .boxtext1 h4:hover {
+        color: #ffffff;
+        background-color: #CCCCCC;
+        cursor:pointer;
+    }
+
+boxtext2 h4 {
+    color: #3bc57f;
+    font-family: Rockwell;
+}
+
+.rate {
+    border: 1px solid #cccccc;
+    height: 46px;
+    padding: 0 10px;
+}
+
+    .rate > label {
+        width: 1em;
+        overflow: hidden;
+        white-space: nowrap;
+        cursor: pointer;
+        font-size: 30px;
+        color: #ccc;
+    }
+
+.rate {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+    .rate input {
+        display: none;
+    }
+
+    .rate label:before {
+        content: '★';
+    }
+
+
+    .rate input:checked ~ label {
+        color: gold;
+    }
+
+.stars:not(.inactive) .rate label:hover,
+.stars:not(.inactive) .rate label:hover ~ label {
+    color: goldenrod !important;
+}
+
+.rate1 {
+    border: 1px solid #cccccc;
+    height: 46px;
+    padding: 0 10px;
+    vertical-align: middle;
+}
+
+
+.rate1 {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+    .rate1 input {
+        display: none;
+    }
+
+    .rate1 label:before {
+        content: '★';
+    }
+
+
+    .rate1 input:checked ~ label {
+        color: gold;
+    }
+
+.stars1:not(.inactive) .rate label:hover,
+.comment textarea {
+    resize: vertical;
+    font-size: 1.2em;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .comment > * {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .comment .stars {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 1.5em;
+    }
+
+.dimmer {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    background-color: #7142a7;
+}
+
+#photos {
+line-height: 0;
+
+-webkit-column-count: 5;
+-webkit-column-gap: 0px;
+-moz-column-count: 5;
+-moz-column-gap: 0px;
+column-count: 5;
+column-gap: 0px;
+}
+
+    #photos img {
+    width: 100% !important;
+    height: auto !important;
+    
+    }
+
+.ease-all {
+    -webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    -o-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+}
+
+
+/* Social Icons */
+
+.social {
+    height: 10rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-content: center;
+    color: black;
+    background-color: white;
+}
+.social li a img{
+    border-radius:30px; 
+    grid-column-align:center;
+    grid-row-align:center;
+    background-color:black;
+}
+
+    .social li a {
+        display: inline-block;
+        float: left;
+        width: 40px;
+        height: 40px;
+        margin-right: 1rem;
+        text-align: center;
+        padding-top: 8px;
+        -webkit-border-radius: 40px;
+        -moz-border-radius: 20px;
+        border-radius: 40px;
+        /*background-color: #222;*/
+        -webkit-box-shadow: inset 0 0 0 40px black;
+        -moz-box-shadow: inset 0 0 0 40px black;
+        box-shadow: inset 0 0 0 40px black;
+        color: black;
+    }
+
+        .social li a:hover {
+            -webkit-box-shadow: inset 0 0 0 3px black;
+            -moz-box-shadow: inset 0 0 0 3px black;
+            box-shadow: inset 0 0 0 3px black;
+            color: black;
+        }
+

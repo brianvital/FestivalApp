@@ -1,0 +1,14 @@
+﻿<div class="col-md-offset-3 col-md-5">
+
+    <form class="vertical-center" ng-submit="controller.login(username, password)">
+        <div class="log">
+            <h1>User Login</h1>
+        </div>
+        <input ng-model="username" placeholder="Username" class="form-control" />
+
+        <input ng-model="password" placeholder="Password" type="password" class="form-control" />
+        <input type="submit" class="form-control btn btn-success" value="Log In" />
+    </form>
+    <p>Or <a href="#/register">Register Here</a></p>
+    <input type="button" ng-click="controller.logout()" value="Logout" />
+    </div>
